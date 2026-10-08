@@ -1,12 +1,9 @@
-/* GENERAL SETTINGS */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -15,11 +12,9 @@ body {
     line-height: 1.7;
 }
 
-
 section {
     padding: 90px 10%;
 }
-
 
 .section-title {
     text-align: center;
@@ -28,9 +23,7 @@ section {
     color: #172554;
 }
 
-
-
-/* NAVIGATION */
+/* HEADER */
 
 header {
     background-color: #0f172a;
@@ -39,19 +32,15 @@ header {
     z-index: 1000;
 }
 
-
 .navbar {
     max-width: 1300px;
     margin: auto;
     min-height: 75px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 6%;
 }
-
 
 .logo {
     color: white;
@@ -59,13 +48,11 @@ header {
     font-weight: bold;
 }
 
-
 .nav-links {
     list-style: none;
     display: flex;
     gap: 24px;
 }
-
 
 .nav-links a {
     text-decoration: none;
@@ -74,22 +61,17 @@ header {
     transition: 0.3s;
 }
 
-
 .nav-links a:hover {
     color: #38bdf8;
 }
 
-
-
-/* HOME */
+/* HERO */
 
 .hero {
     min-height: 90vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
 
     background:
@@ -103,11 +85,11 @@ header {
     color: white;
 }
 
-
 .hero-content {
-    max-width: 850px;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
 }
-
 
 .welcome {
     color: #7dd3fc;
@@ -116,17 +98,15 @@ header {
     margin-bottom: 15px;
 }
 
-
 .hero h1 {
-    font-size: 55px;
+    font-size: 48px;
     margin-bottom: 15px;
+    line-height: 1.2;
 }
-
 
 .hero h1 span {
     color: #38bdf8;
 }
-
 
 .hero h2 {
     font-size: 24px;
@@ -134,13 +114,11 @@ header {
     margin-bottom: 20px;
 }
 
-
 .hero p {
     font-size: 18px;
-    max-width: 700px;
+    max-width: 760px;
     margin: 0 auto 30px;
 }
-
 
 .hero-buttons {
     display: flex;
@@ -149,33 +127,23 @@ header {
     flex-wrap: wrap;
 }
 
-
-
 /* BUTTONS */
 
 .btn {
     display: inline-block;
-
     background-color: #2563eb;
     color: white;
-
     padding: 12px 25px;
-
     border-radius: 8px;
-
     text-decoration: none;
-
     border: 2px solid #2563eb;
-
     transition: 0.3s;
 }
-
 
 .btn:hover {
     background-color: #1d4ed8;
     transform: translateY(-2px);
 }
-
 
 .btn-outline {
     background: transparent;
@@ -183,19 +151,15 @@ header {
     color: #2563eb;
 }
 
-
 .hero .btn-outline {
     color: white;
     border-color: white;
 }
 
-
 .btn-outline:hover {
     background-color: #2563eb;
     color: white;
 }
-
-
 
 /* ABOUT */
 
@@ -203,40 +167,29 @@ header {
     background-color: white;
 }
 
-
 .about-content {
     max-width: 900px;
     margin: auto;
-
     text-align: center;
-
     font-size: 18px;
 }
-
 
 .about-content p {
     margin-bottom: 18px;
 }
 
-
-
 /* SKILLS */
 
 .skills-container {
     display: grid;
-
     grid-template-columns:
         repeat(auto-fit, minmax(220px, 1fr));
-
     gap: 20px;
 }
 
-
 .skill-card {
     background-color: white;
-
     padding: 25px;
-
     border-radius: 12px;
 
     box-shadow:
@@ -245,18 +198,14 @@ header {
     transition: 0.3s;
 }
 
-
 .skill-card:hover {
     transform: translateY(-5px);
 }
-
 
 .skill-card h3 {
     color: #2563eb;
     margin-bottom: 8px;
 }
-
-
 
 /* PROJECTS */
 
@@ -264,24 +213,17 @@ header {
     background-color: white;
 }
 
-
 .projects-container {
     display: grid;
-
     grid-template-columns:
         repeat(auto-fit, minmax(280px, 1fr));
-
     gap: 25px;
 }
 
-
 .project-card {
     background-color: #f8fafc;
-
     padding: 30px;
-
     border-radius: 15px;
-
     border-top: 5px solid #2563eb;
 
     box-shadow:
@@ -290,17 +232,14 @@ header {
     transition: 0.3s;
 }
 
-
 .project-card:hover {
     transform: translateY(-7px);
 }
-
 
 .project-card h3 {
     font-size: 22px;
     margin-bottom: 15px;
 }
-
 
 .technology {
     margin-top: 20px;
@@ -308,36 +247,27 @@ header {
     color: #2563eb;
 }
 
-
-
 /* EDUCATION */
 
 .info-card {
     max-width: 800px;
     margin: auto;
-
     background-color: white;
-
     padding: 35px;
-
     border-radius: 15px;
 
     box-shadow:
         0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
-
 .info-card h3 {
     font-size: 25px;
     color: #2563eb;
 }
 
-
 .info-card h4 {
     margin: 5px 0 15px;
 }
-
-
 
 /* EXPERIENCE */
 
@@ -345,72 +275,53 @@ header {
     background-color: white;
 }
 
-
 .timeline {
     max-width: 900px;
     margin: auto;
 }
 
-
 .experience-card {
     padding: 25px;
-
     margin-bottom: 25px;
-
     border-left: 5px solid #2563eb;
-
     background-color: #f8fafc;
-
     border-radius: 8px;
 
     box-shadow:
         0 3px 12px rgba(0, 0, 0, 0.06);
 }
 
-
 .experience-card h3 {
     color: #2563eb;
 }
-
 
 .experience-card h4 {
     margin-bottom: 10px;
 }
 
-
-
 /* ACHIEVEMENTS */
 
 .achievements-container {
     display: grid;
-
     grid-template-columns:
         repeat(auto-fit, minmax(250px, 1fr));
-
     gap: 25px;
 }
 
-
 .achievement-card {
     background-color: white;
-
     padding: 30px;
-
     border-radius: 12px;
-
     text-align: center;
 
     box-shadow:
         0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-
 .achievement-card h3 {
     color: #2563eb;
     margin-bottom: 10px;
 }
-
-
 
 /* CONTACT */
 
@@ -420,23 +331,19 @@ header {
     text-align: center;
 }
 
-
 #contact .section-title {
     color: white;
 }
-
 
 .contact-container {
     max-width: 700px;
     margin: auto;
 }
 
-
 .contact-container p {
     margin-bottom: 30px;
     font-size: 18px;
 }
-
 
 .contact-links {
     display: flex;
@@ -445,29 +352,21 @@ header {
     flex-wrap: wrap;
 }
 
-
 #contact .btn-outline {
     color: white;
     border-color: white;
 }
 
-
-
 /* FOOTER */
 
 footer {
     background-color: #020617;
-
     color: #cbd5e1;
-
     text-align: center;
-
     padding: 25px;
 }
 
-
-
-/* MOBILE RESPONSIVE DESIGN */
+/* RESPONSIVE */
 
 @media screen and (max-width: 850px) {
 
@@ -476,11 +375,9 @@ footer {
         padding: 15px;
     }
 
-
     .logo {
         margin-bottom: 12px;
     }
-
 
     .nav-links {
         flex-wrap: wrap;
@@ -488,24 +385,18 @@ footer {
         gap: 12px;
     }
 
-
     .hero h1 {
         font-size: 38px;
     }
-
 
     .hero h2 {
         font-size: 20px;
     }
 
-
     section {
         padding: 70px 6%;
     }
-
 }
-
-
 
 @media screen and (max-width: 500px) {
 
@@ -513,24 +404,19 @@ footer {
         font-size: 31px;
     }
 
-
     .hero h2 {
         font-size: 18px;
     }
-
 
     .hero p {
         font-size: 16px;
     }
 
-
     .section-title {
         font-size: 28px;
     }
 
-
     .nav-links {
         font-size: 13px;
     }
-
 }
