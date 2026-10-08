@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://okerentiemiracle17-sketch.github.io/personal-portfolio/sitemap.xml
